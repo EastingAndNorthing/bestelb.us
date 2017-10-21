@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Rewrite urls to index.php, except for files
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?$1 [QSA]
+
+# Hide .ini files
+RewriteRule \.ini$ - [R=404]

@@ -1,0 +1,32 @@
+.accent {
+    color: $accent;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.aesthetic {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: $darkgrey;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  @extend .aesthetic;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #676767;
+  margin-bottom: 0.5em;
+}
+
+a {
+    color: $accent;
+    text-decoration: none;
+    &.active {
+        color: $accent !important;
+    }
+}
