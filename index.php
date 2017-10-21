@@ -1,6 +1,6 @@
 <?php
 
-// Hard coded for for simplicity's sake.
+// Hard coded links for for simplicity's sake.
 // TODO: some kind of bijection function to translate urls back and forth
 
 $links = parse_ini_file('links.ini');
@@ -26,16 +26,9 @@ if(isset($requested) && array_key_exists($requested, $links)){
 	<?php if($destination): ?>
 		<meta http-equiv="refresh" content="2;url=<?= $destination ?>">
 	<?php endif; ?>
-
 	<title>Bestelb.us</title>
 	<meta name="author" content="Mark Oosting">
-	<meta name="description" content="">
-
-	<base href="http://localhost/bestelb.us/">
-
 	<link rel="stylesheet" type="text/css" href="./assets/style/style.css">
-    <script src="./assets/js/app.js"></script>
-	
 </head>
 
 <body>
